@@ -88,7 +88,7 @@ a:hover {
     justify-content:center; /* Centers the title horizontally */
     align-items: center; /* Vertically centers content */
     font-size: 22px;
-    padding: 200px 0px 100px 0px; /* Top, Right, Bottom, Left */
+    padding: 200px 0px 45px 0px; /* Top, Right, Bottom, Left */
     color: #16182A;
     font-family: 'Londrina Solid';
     font-weight: bold;
