@@ -110,7 +110,7 @@ a:hover {
 .buddy-cont{
     display: flex;
     justify-content:space-between;
-    align-items: center;
+    align-items:center;
     padding: 100px;
 }
 .dog-card{
@@ -141,8 +141,7 @@ a:hover {
     height: 40vh;
     margin-top: 5px;
 }
-
-.buddy-cont .text{
+ .text{
    
     display: flex;
     justify-content: center;

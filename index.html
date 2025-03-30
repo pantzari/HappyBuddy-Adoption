@@ -4,36 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <head>
-        <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
-
-</head>
-
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
     <title>HappyBuddy</title>
+
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     
     <header class="menu-container">
         <div class="title">
-           
             HappyBuddy Adoption
-           
         </div>
         <nav class="headerlinks">
-           <a href="#">About us</a>
-           <a href="#">How it Works</a>
-           <a href="#">Meet the Buddies</a>
-           <a href="#">Success Stories</a>
-           <a href="#">Contact</a>
-        </div>
+            <a href="#">About us</a>
+            <a href="#how-it-works">How it Works</a> <!-- Updated Link -->
+            <a href="#">Meet the Buddies</a>
+            <a href="#">Success Stories</a>
+            <a href="#">Contact</a>
+        </nav>
     </header>
 
     <div class="hero-container">
-       
-            <div class="title"> FIND YOUR BUDDY WITH US </div>
-            <div class="subtitle"> PET ADOPTION <br>SERVICE<br> </div>
-            <div class="description"> Adopt and love our wonderful dogs <br>waiting to be your buddy!</div>
-        
+        <div class="title">FIND YOUR BUDDY WITH US</div>
+        <div class="subtitle">PET ADOPTION <br>SERVICE<br></div>
+        <div class="description">Adopt and love our wonderful dogs <br>waiting to be your buddy!</div>
     </div>
 
     <div class="greenvector">
@@ -44,54 +43,55 @@
         <img src="images/mascot.png" alt="mascot" class="mascot">
     </div>
 
-    <div class="howto-title">
+    <!-- How it Works Section with ID -->
+    <div id="how-it-works" class="howto-title">
         <h1>How to find your for<span class="underline">ever Budd</span>y</h1>
-        
         <div class="hearticon">
             <img src="images/heart.png" alt="heart" class="hearticon">
         </div>   
-   
     </div>
 
-    
     <div class="buddy-cont">
         <div class="dog-card">
             <div class="cont">
-                <div class="pics"><img src="images/dog-paw.png" alt="dogpaw" class="pics">
+                <div class="pics">
+                    <img src="images/dog-paw.png" alt="dogpaw" class="pics">
                     <div class="text">
                         <h2>Select your buddy</h2>
-                     </div>
-                     </div>
+                    </div>
+                </div>
             </div>
-           
         </div>
     
-        <div class="buddy-cont">
-             <div class="dog-card">
+        <div class="dog-card">
             <div class="cont">
                 <div class="pics">
                     <img src="images/phone-icon.png" alt="phone" class="pics" style="height: 30vh; width: 35vh; margin-top: 40px; margin-left: 12px;">
-                
-                
                 </div>
-
             </div>
             <div class="text">
                 <h2 style="margin-top: 10px;">Contact Us</h2>
             </div>
-           
         </div>
-
-        </div>
-       
+    
         <div class="dog-card">
-            sdffsdfsdfsdfsd
+            <div class="cont">
+                <div class="pics">
+                    <img src="images/house-icon.png" alt="house" class="pics">
+                </div>
+            </div>
+            <div class="text">
+                <h2>Bring them Home</h2>
+            </div>
         </div>
-    
-    
     </div>
-  
-    
-    
-</body>
+
+    <div class="about-us">
+        <!-- About Us Section -->
+    </div>
+
+
+
+
+   </body>
 </html>
