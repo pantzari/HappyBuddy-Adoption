@@ -1,7 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;  /* Essential for consistent sizing */
+   /*TODO make css same for all browsers here*/
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   border: 0;
+   font-size: 100%;
+   font-family: inherit;
+   vertical-align: baseline; /* Essential for consistent sizing */
 }
 
 .menu-container {
@@ -87,13 +92,14 @@ a:hover {
     display: flex;
     justify-content:center; /* Centers the title horizontally */
     align-items: center; /* Vertically centers content */
-    font-size: 22px;
+    font-size: 32px;
     padding: 200px 0px 45px 0px; /* Top, Right, Bottom, Left */
     color: #16182A;
     font-family: 'Londrina Solid';
     font-weight: bold;
     gap: 10px;
 }
+
 .underline{
     text-decoration: underline;
     text-decoration-color: #AFDD7D;
@@ -112,8 +118,20 @@ a:hover {
     justify-content:space-between;
     align-items:center;
     padding: 100px;
+    
 }
-.dog-card{
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.dog-card {
     width: 45vh;
     height: 45vh;
     padding: 15px;
@@ -121,7 +139,11 @@ a:hover {
     background-color: #AFDD7D;
     box-shadow: 0px 5px 5px rgb(137, 137, 137);
 
+    /* Animation */
+    opacity: 0; /* Start hidden */
+    animation: slideIn 1s ease-out forwards; /*only activate when scrolling  down, do it with js WHEN YOU ARE DONE*/
 }
+
 .dog-card .cont{
     width: 40vh;
     height: 40vh;
@@ -133,6 +155,10 @@ a:hover {
     border-radius: 40px;
     background-color: #9CD2FF;
     box-shadow: 0px 5px 5px rgb(137, 137, 137);
+}
+.dog-card:hover {
+    transform: scale(1.05) rotate(10deg);
+    box-shadow: 1 0 15px #646cff50;
 }
 
 .dog-card .pics{
@@ -150,4 +176,20 @@ a:hover {
     padding: 40px 10px 10px;
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
+}
+
+.blue-wave{
+    position: relative;
+    padding: 150px 0px 0px 0px; 
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures the vector is behind other content */
+
+}
+.about-us-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #050d2c;
+
 }
