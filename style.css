@@ -9,6 +9,7 @@
    vertical-align: baseline; /* Essential for consistent sizing */
 }
 
+
 .menu-container {
     display: flex;
     justify-content:flex-start; /* Aligns items to the left side */
@@ -126,16 +127,7 @@ a:hover {
     padding: 100px;
     
 }
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
+
 
 .dog-card {
     width: 45vh;
@@ -145,9 +137,6 @@ a:hover {
     background-color: #AFDD7D;
     box-shadow: 0px 5px 5px rgb(137, 137, 137);
 
-    /* Animation */
-    opacity: 0; /* Start hidden */
-    animation: slideIn 1s ease-out forwards; /*only activate when scrolling  down, do it with js WHEN YOU ARE DONE*/
 }
 
 .dog-card .cont{
@@ -162,10 +151,10 @@ a:hover {
     background-color: #9CD2FF;
     box-shadow: 0px 5px 5px rgb(137, 137, 137);
 }
-.dog-card:hover {
+/*.dog-card:hover {
     transform: scale(1.05) rotate(10deg);
     box-shadow: 1 0 15px #646cff50;
-}
+}*/
 
 .dog-card .pics{
     position: relative;
@@ -182,6 +171,8 @@ a:hover {
     padding: 40px 10px 10px;
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
+    
+    
 }
 
 .blue-wave{
@@ -230,4 +221,46 @@ a:hover {
  }
  .about-text{
     padding: 10px 0px 20px 0px; /* Top, Right, Bottom, Left */
+ }
+
+ .buddy-text{
+    display: flex;
+    justify-content:center; /* Centers the title horizontally */
+    align-items: center; /* Vertically centers content */
+    font-size: 40px;
+    padding: 100px 55px 150px 0px; /* Top, Right, Bottom, Left */
+    color: #16182A;
+    font-family: 'Londrina Solid';
+    font-weight: bold;
+    gap: 10px;
+/* Top, Right, Bottom, Left */
+ }
+
+
+ /* dog cards boxes*/
+ .grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+    gap: 75px;
+    place-items: center;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+ }
+ .puppy-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    background-color: #B8E389;
+    border-radius: 48px;
+    box-shadow: 0px 3px 5px rgb(137, 137, 137);
+ }
+ .inner-card{
+    width: 275px;
+    height: 245px;
+    background: #EDFFDA;
+    border-radius: 45px;
+    box-shadow: 0px 3px 5px rgb(137, 137, 137);
  }
