@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
     <title>HappyBuddy</title>
 
@@ -11,6 +12,7 @@
         /* Smooth scrolling */
         html {
             scroll-behavior: smooth;
+            
         }
     </style>
 </head>
@@ -21,10 +23,10 @@
             HappyBuddy Adoption
         </div>
         <nav class="headerlinks">
-            <a href="#">About us</a>
+            <a href="#about">About us</a>
             <a href="#how-it-works">How it Works</a> <!-- Updated Link -->
-            <a href="#">Meet the Buddies</a>
-            <a href="#">Success Stories</a>
+            <a href="#meet-them">Meet the Buddies</a>
+            <a href="#stories">Success Stories</a>
             <a href="#">Contact</a>
         </nav>
     </header>
@@ -83,7 +85,7 @@
         </div>
     </div>
   
-    <div class="blue-wave">
+    <div id="about" class="blue-wave">
         <img src="images/blue-wave.png" alt="blue-wave" class="blue-wave">
         <div class="about-us-container">
             <div class="aboutus-title">Who <span class="sec-underline"> are we </span></div>
@@ -96,7 +98,8 @@
             </div>
         </div>
      </div>
-    <div class="buddy-text">
+
+    <div id="meet-them" class="buddy-text">
         Meet the Buddies
     </div>
     <div class="grid-container">
@@ -158,7 +161,11 @@
                     <img src="images/ronnie.png" alt="ronnie" class="dog-img">
                 </div>
             </div>
+
             <button class="dog-bttn"> <div class="bttn-text">Adopt Me</div></button>
+
+        
+        
         </div>
 
      <div class="puppy-cards"> 
@@ -200,5 +207,6 @@
     <footer>
         <img src="images/footer.png" alt="footer-graphic" class="footer-graphic">
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -332,6 +332,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     padding: 90px;
+
     
     
 }
@@ -347,6 +348,11 @@ a:hover {
     border: 5px solid #ffffff;
     box-shadow: 0px 5px 5px rgb(137, 137, 137);
 
+}
+
+.more-bttn-txt:hover {
+    background-color: #82b150; /* Change background color on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
 }
 
 .footer-graphic {
